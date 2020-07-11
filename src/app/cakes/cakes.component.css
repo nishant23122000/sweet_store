@@ -1,0 +1,97 @@
+
+p{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.cakes{
+    margin-left: 60px !important;
+    height: auto;
+   
+    margin: 20px;
+}
+.cakes p:first-child{
+    font-size: 35px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-left: 50px !important;
+    color: white;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;    
+    width: 100%;
+    margin: 0 !important;
+    
+    padding-left: 80px !important;
+   
+}
+.cake{
+    cursor: pointer;
+    width: 290px;
+    height: auto;
+    background-color: white;
+    box-shadow: 4px 5px 10px grey;
+    border-radius: 12px;
+    margin: 15px 15px;
+    transition: 0.5s all;
+}
+.cake:hover{
+    box-shadow: 7px 10px 50px grey;
+}
+.cake img{
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.cake .name{
+    margin: 5px 10px !important;
+    font-size: 20px;
+}
+.cake .desc{
+    font-size: 17px;
+    margin: 10px 15px !important;
+    font-family: 'Muli', sans-serif;
+}
+.cake button{
+    width: 100%;
+    font-size: 26px;
+ 
+    font-family: 'Flamenco', cursive;
+    font-weight: 600;
+    border: none !important;
+    padding: 10px 0px;
+    
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: 0.5s all;
+}
+.cake button:hover{
+    background-color: #3700B3;
+    color: white;
+
+}
+@media only screen  and (max-width:991px){
+    .cakes{
+        margin-left: 10px !important;
+        margin: 10px !important;
+    }
+
+    .cake{
+        margin: 15px 5px !important;
+    }
+}
+@media only screen  and (max-width:600px){
+    .list{
+        padding-left: 10px !important;
+    }
+}
+@media only screen  and (max-width:400px){
+    .list{
+        padding-left: 0px !important;
+        margin-right: 10px !important;
+    }
+}

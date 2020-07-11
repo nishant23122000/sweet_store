@@ -1,0 +1,22 @@
+
+
+
+<div class="product row">
+    <div class="col-xl-12 close">
+        <button (click)="onClose()" >X</button>
+    </div>
+  
+    <div class="col-xl-12">
+        <img  src="{{product.img}}" alt="cake">
+    </div>
+    <div class="col-xl-12 name">
+        <p>{{product.name}}</p>
+    </div>
+    <div class="col-xl-12 desc">
+        <p>{{product.description}}</p>
+    </div>
+    <div class="col-xl-12">
+        <button class="btn" (click)="onOrder()">Order Now</button>
+    </div>
+ 
+</div>

@@ -1,0 +1,21 @@
+
+
+
+
+<div class="container cakes"  id="products" *ngFor="let item of cakes">
+   
+        <p class="type">{{item.type}}</p>
+        
+        <div class="list">
+            <div (click)="getCake(cake.id,item.type)"  class="cake" *ngFor="let cake of item.items">
+                   <img src="{{cake.img}}" alt="chock">
+                    <p class="name">{{cake.name}}</p>
+                    <p class="desc">{{cake.description | short}}</p>
+                    <button>Order Now</button>
+                </div>
+           
+        </div>
+        <hr>
+    
+   
+</div>
